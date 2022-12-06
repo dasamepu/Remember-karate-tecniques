@@ -11,98 +11,119 @@ function resultadoAleatorio() {
 
 switch (num_defensa) {
     case 1:
-        defensa = "YODAN AGE UKE"
+        defensa = "SEIKEN"
         break;
     case 2:
-        defensa = "YOKO UKE"
+        defensa = "SEIKEN CHOKU ZUKI"
         break;
     case 3:
-        defensa = "YOKO UCHI UKE"
+        defensa = "OIT ZUKI"
         break;
     case 4:
-        defensa = "GEDAN BARAY"
+        defensa = "GYAKU ZUKI"
         break;
     case 5:
-        defensa = "SHUTO UKE"
+        defensa = "TATE ZUKI"
         break;
     case 6:
-        defensa = "JUJI SHOTEI UKE"
+        defensa = "MAWASHI ZUKI"
         break;
     case 7:
-        defensa = "JUJI UKE"
+        defensa = "URA ZUKI"
         break;
     case 8:
-        defensa = "MOROTE KAKIWAKE UKE"
+        defensa = "MOROTE HEIKO ZUKI"
         break;
     case 9:
-        defensa = "MOROTE YOKO UKE"
+        defensa = "MOROTE YAMA ZUKI"
         break;
     case 10:
-        defensa = "ZUKI UKE"
+        defensa = "KAGI ZUKI"
         break;
     case 11:
-        defensa = "TEISHO UKE"
+        defensa = "RIKEN UCHI"
         break;
     case 12:
-        defensa = "KEITO UKE"
+        defensa = "HITO SASHI IPON KEN"
         break;
     case 13:
-        defensa = "KO UKE"
+        defensa = "NAKADATE IPON KEN"
         break;
     case 14:
-        defensa = "HAISHU UKE"
+        defensa = "HIRAKEN UCHI"
         break;
     case 15:
-        defensa = "KENTSUI UKE"
+        defensa = "KENTSUI UCHI"
         break;
     case 16:
-        defensa = "KAKE UKE"
+        defensa = "HAITO UCHI"
         break;
     case 17:
-        defensa = "SUKAMI UKE"
+        defensa = "HAISHU UCHI"
         break;
     case 18:
-        defensa = "NAGASHI UKE"
+        defensa = "KUMADE UCHI"
         break;
     case 19:
-        defensa = "OSAE UKE"
+        defensa = "IPON NUKITE"
         break;
     case 20:
-        defensa = "SUKUI UKE"
+        defensa = "NIHON NUKITE"
         break;
     case 21:
-        defensa = "WANKA UKE"
+        defensa = "YOHON NUKITE"
         break;
     case 22:
-        defensa = "UDE UKE"
+        defensa = "SHUTO UCHI"
         break;
     case 23:
-        defensa = "TEKUBI KAKE UKE"
+        defensa = "GIAKU SHUTO UCHI"
         break;
     case 24:
-        defensa = "JIJI UKE"
+        defensa = "UDE UCHI"
         break;
     case 25:
-        defensa = "JIJI SASAE UKE"
+        defensa = "TEISHO UCHI"
         break;
     case 26:
-        defensa = "KURI UKE"
+        defensa = "KO UCHI"
         break;
     case 27:
-        defensa = "SEIRYU TO UKE"
+        defensa = "SEIRYUTO UCHI"
         break;
     case 28:
-        defensa = "AWASE UKE"
+        defensa = "EMPI UCHI"
         break;
     case 29:
-        defensa = "KAKETE UKE"
+        defensa = "OYAYUBI"
         break;
     case 30:
-        defensa = "OTOSHE UDE UKE"
+        defensa = "HERABASAMI"
         break;
     case 31:
-        defensa = "HARAY UKE"
+        defensa = "YUBI BASAMI"
     break;
+    case 32:
+        defensa = "URAKEN UCHI"
+        break;
+    case 33:
+        defensa = "AGET SUKI"
+        break;
+    case 34:
+        defensa = "FURIT SUKI"
+        break;
+    case 35:
+        defensa = "OTOSHE UCHI"
+    break;
+    case 36:
+        defensa = "WASHIDE UCHI"
+        break;
+    case 37:
+        defensa = "SHOTEI UCHI"
+        break;
+    case 38:
+        defensa = "KEITO UCHI"
+        break;
     default:
         defensa = "Error"
         break;
