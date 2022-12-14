@@ -7,7 +7,7 @@ function aleatorio(min, max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
 function resultadoAleatorio() {
-    num_defensa = aleatorio(1, 31)
+    num_defensa = aleatorio(1, 38)
 
 switch (num_defensa) {
     case 1:
