@@ -1,137 +1,166 @@
-let defensa = ""
+const const_boton = document.getElementById("id_boton")
+const const_boton_reiniciar = document.getElementById("boton_reiniciar")
+const const_resultado = document.getElementById("id_resultado")
 
-let let_boton = document.getElementById("id_boton")
-let_boton.addEventListener("click", resultadoAleatorio)
+const_boton_reiniciar.addEventListener("click", reiniciar)
 
 function aleatorio(min, max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
-function resultadoAleatorio() {
-    num_defensa = aleatorio(1, 38)
 
-switch (num_defensa) {
+function createArrayOfNumbers(start, end){
+    let myArray = [];
+    for(let i = start; i <= end; i++) { 
+        myArray.push(i);
+    }
+    return myArray;
+}
+
+num_ataque = createArrayOfNumbers(1, 38)
+
+const_boton.addEventListener("click", () => {
+    
+        if(num_ataque.length == 0){
+            console.log("se acabaron los ataques");
+            const_resultado.innerHTML = "se acabaron los ataques, dale reiniciar para mostrar los ataques otra vez"
+            return;
+        }
+        let randomIndex = aleatorio(0, num_ataque.length-1);
+        let randomNumber = num_ataque[randomIndex];
+        num_ataque.splice(randomIndex, 1)     
+        rand_atack = randomNumber;
+        tecnicaAleatoria(rand_atack)
+    
+})
+
+function tecnicaAleatoria(rand_atack) { 
+
+switch (rand_atack) {
     case 1:
-        defensa = "SEIKEN"
+        ataque = "SEIKEN"
         break;
     case 2:
-        defensa = "SEIKEN CHOKU ZUKI"
+        ataque = "SEIKEN CHOKU ZUKI"
         break;
     case 3:
-        defensa = "OIT ZUKI"
+        ataque = "OIT ZUKI"
         break;
     case 4:
-        defensa = "GYAKU ZUKI"
+        ataque = "GYAKU ZUKI"
         break;
     case 5:
-        defensa = "TATE ZUKI"
+        ataque = "TATE ZUKI"
         break;
     case 6:
-        defensa = "MAWASHI ZUKI"
+        ataque = "MAWASHI ZUKI"
         break;
     case 7:
-        defensa = "URA ZUKI"
+        ataque = "URA ZUKI"
         break;
     case 8:
-        defensa = "MOROTE HEIKO ZUKI"
+        ataque = "MOROTE HEIKO ZUKI"
         break;
     case 9:
-        defensa = "MOROTE YAMA ZUKI"
+        ataque = "MOROTE YAMA ZUKI"
         break;
     case 10:
-        defensa = "KAGI ZUKI"
+        ataque = "KAGI ZUKI"
         break;
     case 11:
-        defensa = "RIKEN UCHI"
+        ataque = "RIKEN UCHI"
         break;
     case 12:
-        defensa = "HITO SASHI IPON KEN"
+        ataque = "HITO SASHI IPON KEN"
         break;
     case 13:
-        defensa = "NAKADATE IPON KEN"
+        ataque = "NAKADATE IPON KEN"
         break;
     case 14:
-        defensa = "HIRAKEN UCHI"
+        ataque = "HIRAKEN UCHI"
         break;
     case 15:
-        defensa = "KENTSUI UCHI"
+        ataque = "KENTSUI UCHI"
         break;
     case 16:
-        defensa = "HAITO UCHI"
+        ataque = "HAITO UCHI"
         break;
     case 17:
-        defensa = "HAISHU UCHI"
+        ataque = "HAISHU UCHI"
         break;
     case 18:
-        defensa = "KUMADE UCHI"
+        ataque = "KUMADE UCHI"
         break;
     case 19:
-        defensa = "IPON NUKITE"
+        ataque = "IPON NUKITE"
         break;
     case 20:
-        defensa = "NIHON NUKITE"
+        ataque = "NIHON NUKITE"
         break;
     case 21:
-        defensa = "YOHON NUKITE"
+        ataque = "YOHON NUKITE"
         break;
     case 22:
-        defensa = "SHUTO UCHI"
+        ataque = "SHUTO UCHI"
         break;
     case 23:
-        defensa = "GIAKU SHUTO UCHI"
+        ataque = "GIAKU SHUTO UCHI"
         break;
     case 24:
-        defensa = "UDE UCHI"
+        ataque = "UDE UCHI"
         break;
     case 25:
-        defensa = "TEISHO UCHI"
+        ataque = "TEISHO UCHI"
         break;
     case 26:
-        defensa = "KO UCHI"
+        ataque = "KO UCHI"
         break;
     case 27:
-        defensa = "SEIRYUTO UCHI"
+        ataque = "SEIRYUTO UCHI"
         break;
     case 28:
-        defensa = "EMPI UCHI"
+        ataque = "EMPI UCHI"
         break;
     case 29:
-        defensa = "OYAYUBI"
+        ataque = "OYAYUBI"
         break;
     case 30:
-        defensa = "HERABASAMI"
+        ataque = "HERABASAMI"
         break;
     case 31:
-        defensa = "YUBI BASAMI"
+        ataque = "YUBI BASAMI"
     break;
     case 32:
-        defensa = "URAKEN UCHI"
+        ataque = "URAKEN UCHI"
         break;
     case 33:
-        defensa = "AGET SUKI"
+        ataque = "AGET SUKI"
         break;
     case 34:
-        defensa = "FURIT SUKI"
+        ataque = "FURIT SUKI"
         break;
     case 35:
-        defensa = "OTOSHE UCHI"
+        ataque = "OTOSHE UCHI"
     break;
     case 36:
-        defensa = "WASHIDE UCHI"
+        ataque = "WASHIDE UCHI"
         break;
     case 37:
-        defensa = "SHOTEI UCHI"
+        ataque = "SHOTEI UCHI"
         break;
     case 38:
-        defensa = "KEITO UCHI"
+        ataque = "KEITO UCHI"
         break;
     default:
-        defensa = "Error"
+        ataque = "Error"
         break;
 }
 
-console.log(num_defensa);
+console.log(rand_atack);
 
-let let_resultado = document.getElementById("id_resultado")
-let_resultado.innerHTML = defensa;
+
+const_resultado.innerHTML = ataque;
 }
 
+function reiniciar() {
+    location.reload();
+}
